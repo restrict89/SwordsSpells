@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<units>
+    <unit name="Archer">
+        <health>15</health>
+        <attack>5</attack>
+        <speed>5</speed>
+    </unit>
+    <unit name="Griffin">
+        <health>35</health>
+        <attack>2</attack>
+        <speed>0</speed>
+    </unit>
+    <unit name="Knight">
+        <health>25</health>
+        <attack>7</attack>
+        <speed>9</speed>
+    </unit>
+    <unit name="Mage">
+        <health>10</health>
+        <attack>0</attack>
+        <speed>3</speed>
+    </unit>
+    <unit name="Pikeman">
+        <health>15</health>
+        <attack>4</attack>
+        <attack>5</attack>
+    </unit>
+</units>

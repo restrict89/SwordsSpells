@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Archer>
+        <health>15</health>
+        <attack>5</attack>
+        <speed>5</speed>
+</Archer>
