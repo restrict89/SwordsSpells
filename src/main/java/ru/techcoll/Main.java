@@ -1,15 +1,20 @@
 package ru.techcoll;
 
-
 import ru.techcoll.game.Battlefield;
-import ru.techcoll.game.actions.AttackAction;
+import ru.techcoll.game.actions.*;
 import ru.techcoll.game.units.Archer;
-import ru.techcoll.game.units.Knight;
-import ru.techcoll.game.units.Unit;
+import ru.techcoll.game.units.*;
+
 
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) throws Exception {
+      /*      UnitSettings unitSettings = new UnitSettings("UnitSetting.xml");
+         for(UnitInitItem u:unitSettings.getUnitSettings().getItems()) {
+                System.out.println(u.toString());
+            }
+
+        System.out.printf(unitSettings.getUnitSettingsForName("Archer").toString());*/
 
         Battlefield bf = new Battlefield();
         Unit archer = bf.addUnit(new Archer(2, 4));

@@ -2,6 +2,8 @@ package ru.techcoll.game.units;
 
 import ru.techcoll.game.AttackType;
 import ru.techcoll.game.GameObject;
+import ru.techcoll.game.unitsSettings.UnitInitItem;
+import ru.techcoll.game.unitsSettings.UnitSettings;
 
 public abstract class Unit extends GameObject {
 
@@ -17,13 +19,26 @@ public abstract class Unit extends GameObject {
 
     protected int y;
 
-    protected Unit(int health, int attack, AttackType attackType, int speed, int x, int y) {
+
+    protected Unit(int health, int attack, AttackType attackType, int speed, int x, int y) throws Exception {
         this.health = health;
         this.attack = attack;
         this.attackType = attackType;
         this.speed = speed;
         this.x = x;
         this.y = y;
+    }
+
+    protected Unit(String unitName, AttackType attackType, int x, int y) throws Exception
+    {
+        UnitInitItem unitInitItem = new UnitSettings("UnitSetting.xml").getUnitSettingsForName(unitName);
+        this.health = unitInitItem.getHealth();
+        this.attack = unitInitItem.getAttack();
+        this.attackType = attackType;
+        this.speed = unitInitItem.getSpeed();
+        this.x = x;
+        this.y = y;
+
     }
 
     public int getHealth() {

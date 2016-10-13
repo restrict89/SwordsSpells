@@ -23,8 +23,8 @@ public class Griffin extends Unit {
     public final static int SPEED = 0;
 
 
-    public Griffin(int x, int y) {
-        super(HEALTH, ATTACK, AttackType.MELEE, SPEED, x, y);
+    public Griffin(int x, int y) throws Exception{
+        super("Griffin", AttackType.MELEE, x, y);
     }
 
     public String toString() {

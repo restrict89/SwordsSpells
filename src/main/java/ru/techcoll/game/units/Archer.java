@@ -6,7 +6,6 @@ import ru.techcoll.game.AttackType;
  * Юнит с дальней атакой - лучник
  */
 public class Archer extends Unit {
-
     /**
      * Начальное значение здоровья
      */
@@ -23,10 +22,9 @@ public class Archer extends Unit {
     public final static int SPEED = 5;
 
 
-    public Archer(int x, int y) {
-
-        super(HEALTH, ATTACK, AttackType.RANGED, SPEED, x, y);
-    }
+    public Archer(int x, int y) throws Exception{
+       super("Archer", AttackType.RANGED, x, y);
+           }
 
     public String toString() {
         return String.format("Archer @(%d, %d) %d/%d", x, y, attack, health);

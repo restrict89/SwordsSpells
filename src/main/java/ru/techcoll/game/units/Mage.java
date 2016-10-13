@@ -23,8 +23,8 @@ public class Mage extends Unit {
     public final static int SPEED = 3;
 
 
-    public Mage(int x, int y) {
-        super(HEALTH, ATTACK, AttackType.MAGIC, SPEED, x, y);
+    public Mage(int x, int y) throws Exception{
+        super("Mage", AttackType.MAGIC, x, y);
     }
 
     public String toString() {

@@ -23,8 +23,8 @@ public class Pikeman extends Unit {
     public final static int SPEED = 5;
 
 
-    public Pikeman(int x, int y) {
-        super(HEALTH, ATTACK, AttackType.MELEE, SPEED, x, y);
+    public Pikeman(int x, int y) throws Exception{
+        super("Pikeman", AttackType.MELEE, x, y);
     }
 
     public String toString() {

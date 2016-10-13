@@ -23,8 +23,8 @@ public class Knight extends Unit {
     public final static int SPEED = 9;
 
 
-    public Knight(int x, int y) {
-        super(HEALTH, ATTACK, AttackType.MELEE, SPEED, x, y);
+    public Knight(int x, int y) throws Exception{
+        super("Knight", AttackType.MELEE, x, y);
     }
 
     public String toString() {
